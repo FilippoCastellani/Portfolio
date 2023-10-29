@@ -2,23 +2,23 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Filippo Castellani
+Filippo castellani
+MSc in Biomedical Engineering
 
 Show Contacts
 
 Email
-richard@example.com
+castellanifilippo5@gmail.com
 
 Phone
-+1 (213) 352-2795
++39 348 274-0303
 
 Birthday
-June 23, 1982
+February 5, 1999
 
 Location
-Sacramento, California, USA
+Rome, Italy
 
 # navbar
 
@@ -32,10 +32,9 @@ Contact
 
 About me
 
-I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
-
-My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
-
+Biomedical Engineering student driven by a profound interest in Neuroscience, Brain-Machine Interfaces (BMI), and AI-driven solutions for rehabilitation.
+I can rely on solid basis of engineering principles complemented by hand-on experience gained through direct interaction with patients and conducting experiments with technical instrumentation. 
+I aim to contribute as much as possible to the field of biomedical solutions which can improve people well-being and ultimately change their life.
 
 ## service
 
