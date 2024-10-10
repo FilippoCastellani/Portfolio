@@ -1,0 +1,215 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{FILIPPO CASTELLANI}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large PhD Candidate in Biorobotics\\ \\\footnotesize{Birth date: 5th Feb 1999}} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	\icon{Globe}{11}{\href{https://filippocastellani.github.io/Portfolio/}{Portfolio Website}}\\ 
+    \icon{Phone}{11}{+39 3482740303}\\
+    \icon{MapMarker}{11}{Paris, France}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:castellanifilippo5@gmail.com}{castellanifilippo5@gmail.com}}\\	
+    \icon{Github}{11}{\href{https://github.com/FilippoCastellani}{github.com/FilippoCastellani}}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/filippo-castellani}{/in/filippo-castellani}}\\    
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.55\textwidth}
+    \cvsect{Summary}
+	\vspace{-6pt}
+ 
+    %Dummy text
+    Biomedical Engineering student driven by a profound interest in Neuroscience, Brain-Computer Interfaces (BCI), and AI-driven solutions for rehabilitation.\\  
+    I have a solid engineering background, reinforced by hands-on experience acquired in clinical settings and conducting experiments with technical instruments and biological tissues. With my work, I aim to make significant contributions to the field of biomedical solutions, enhancing the well-being of patients affected by neural disabilities.
+	
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.405\textwidth}
+    \cvsect{Technical Expertise}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.27\textwidth}
+        \textbf{Coding \\ Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.70\textwidth}
+      Python, Matlab, C++, \\ JavaScript, SQL, HTML, CSS.
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.27\textwidth}
+        \textbf{Electro-\\ Physiology:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.70\textwidth}
+      EEG acquisition,\\ EMG acquisition,\\ FES stimulation,\\ Neural population recording using Multi-Electrode Arrays.
+    \end{minipage}
+    
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-1 pt}
+\cvsect{Experience}
+\begin{entrylist}
+	\entry
+        {10/2023 -- 04/2024}
+		{ Research internship (Master Thesis)}
+		{\textcolor{blue}{{\href{https://www.institut-vision.org/en/}{Institut de La Vision (Sorbonne Université), Paris, FR}}}}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Research visual information encoding in biological neural networks, in particular, in the retina.
+            \item Study Retinal Ganglion Cells response through Multi-Electrode Array recording on ex-vivo mouse retina.
+            \item Devise and carry out experiments to probe and explore visual information encoding mechanisms during biomimetic stimulation.
+            \item Analyse the electrophysiological response of neurons to uncover the mechanisms behind poorly understood color encoding.
+            
+        \end{itemize} 
+        
+        }
+        
+	\entry
+		{11/2021 -- 09/2023}
+		{Neurotechnology Researcher \\\footnotesize{RECOMMENCER Project: \textit{Currently undergoing \textcolor{blue}{\href{https://clinicaltrials.gov/study/NCT05511207}{clinical trial - NCT05511207}}}}}
+		{\textcolor{blue}{\href{https://www.hsantalucia.it/laboratorio-immagini-neuroelettriche-interfacce-cervello-computer}{S.Lucia Foundation IRCCS, Rome, IT}}}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Implementation of a bidirectional Brain Computer Interface (BCI) for upper limb rehabilitation in post-stroke subjects.
+            \item Develop real-time algorithm to perform electroencephalographic (EEG), electromyographic (EMG) signals analysis and eventually extracting Corticomuscular Coherence features.
+            \item Code and test the features classification logic that relays neurofeedback through Functional Electrical Stimulation (FES).
+            \item Design and integrate information processing modules in a cohesive data pipeline, from acquisition to sensorial neurofeedback.
+            \item Create the therapist interface for rehabilitation session management. Write documentation and software version management.
+        \end{itemize} 
+        }
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+\vspace{-15 pt}
+\cvsect{Publications}
+\begin{entrylist}
+    \entry
+		{2022}
+		{Cortico-Muscular Coupling to Control a Hybrid Brain-Computer Interface for Upper Limb Motor Rehabilitation: A Pseudo-Online Study on Stroke Patients.}
+		{\textcolor{blue}{\href{https://doi.org/10.3389/fnhum.2022.1016862}
+{Front. Human Neuroscience 2022, 16, 1016862.}}}
+		{de Seta, V.; Toppi, J.; Colamarino, E.; Molle, R.; Castellani, F.; Cincotti, F.; Mattia, D.; Pichiorri, F.}
+    
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\vspace{-15 pt}
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+		{Up-to-Date}
+		{My projects}
+		{\textcolor{blue}{\href{https://filippocastellani.github.io/Portfolio/}{Portfolio}}}
+		{ \icon{Rocket}{11}{Collection of recent, past and ongoing projects.} }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-15 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{9/2021 - today \\\footnotesize{scholarship holder}}
+		{MSc Biomedical Engineering - Technologies for Electronics }
+		{Politecnico di Milano, Milan, IT}
+		{Thesis: currently under development}
+    \entry
+		{9/2018 - 10/2021 \\\footnotesize{scholarship holder}}
+		{BSc Clinical Engineering}
+		{Sapienza Università di Roma, Rome, IT}
+		{Thesis: Coherence-Based BCI for Rehabilitation: Feature Extraction and Experimental Assessment
+   \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin= 10pt]
+            \item Perform research on state of-the-art use of coherence-based BCI. 
+            \item Implementing via Python, a feature extraction algorithm executable within the OpenVibe Software framework.
+            \item Conduct laboratory test of features extraction from non-pathological subjects.
+
+        \end{itemize} 
+             }
+	\entry
+		{9/2011 - 9/2019}
+		{Jazz Drum [2011-2015] and Electronic Music [2018-2019]}
+		{Conservatory of Music Santa Cecilia, Rome, IT}
+		{ \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin= 10pt]
+            \item Completed coursework in composition, music theory, application of signal theory to sound design. 
+            \item Proficient in solfége, pianoforte, Jazz drumming techniques, as well as orchestral performance.
+            \end{itemize}
+        }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-15 pt}
+	\cvsect{Languages}
+    \vspace{-6pt}
+    
+    \hspace{26mm} \textbf{English}: B2 (Cambridge), \textbf{French}: C1 (Alliance Française), \textbf{Spanish}: B1 (Istituto Cervantes), \textbf{ Italian}: native.
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
