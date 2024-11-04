@@ -157,6 +157,9 @@ html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
 
+.lightmode {
+  background: var(--white-1);
+}
 
 
 
@@ -449,6 +452,64 @@ main {
 .social-item .social-link:hover { color: var(--light-gray); }
 
 
+/*-----------------------------------*\
+  #NIGHT-MODE
+\*-----------------------------------*/
+
+.icon-box-toggle {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  color: #f1c40f;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+.night-mode-ball {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.2s linear;
+}
+
+.night-mode-checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.night-mode-checkbox:checked + .night-mode-label .night-mode-ball {
+  transform: translateX(36px);
+}
+
+.icon-box-toggle::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.icon-box-toggle ion-icon { --ionicon-stroke-width: 45px;}
+
+.night-mode-label {
+  background-color: var(--bg-gradient-onyx);
+  display: flex;
+  border-radius: 10px;
+  height: 26px;
+  width: 60px;
+  padding: 5px;
+  justify-content: space-between;
+  position: relative;
+}
 
 
 
