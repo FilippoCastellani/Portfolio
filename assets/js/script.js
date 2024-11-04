@@ -157,3 +157,10 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// switch to dark/light mode
+const night_mode_checkbox = document.getElementById("night-mode-checkbox");
+
+night_mode_checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("lightmode");
+});
