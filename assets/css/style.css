@@ -159,6 +159,65 @@ body { background: var(--smoky-black); }
 
 .lightmode {
   background: var(--white-1);
+
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsla(0, 0%, 98%, 0.806) 3%, 
+    hsl(64, 82%, 93%) 97%
+  );
+
+  --bg-gradient-jet: linear-gradient(
+    to bottom right, 
+    hsla(0, 0%, 98%, 0.251) 0%, 
+    hsla(0, 0%, 98%, 0) 100%
+  ), hsl(65, 100%, 98%); /* used for "Fascinated by" */
+
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right, 
+    hsl(21, 100%, 71%) 0%, 
+    hsla(36, 100%, 69%, 0) 50%
+  );
+
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg, 
+    hsla(21, 100%, 71%, 0.251) 0%, 
+    hsla(36, 100%, 69%, 0) 59.86%
+  ), hsl(64, 100%, 92%); /* only visible if the page is zoomed in a lot */
+
+  --border-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(0, 0%, 98%) 0%, 
+    hsla(46, 100%, 87%, 0.564) 50%
+  );
+
+  --text-gradient-yellow: linear-gradient(
+    to right, 
+    hsl(21, 100%, 71%), 
+    hsl(11, 100%, 68%)
+  );
+
+  --jet: hsl(47, 100%, 78%); /* used for border */
+  --onyx: hsl(0, 0%, 71%); /* used for personal title */
+  --eerie-black-1: hsl(54, 83%, 98%); /* used for badges */
+  --eerie-black-2: hsl(0, 0%, 100%); /* used for background */
+  --smoky-black: hsl(0, 0%, 100%); /* used for scroll bar */
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 0%); /*used for important text */
+  --orange-yellow-crayola: hsl(21, 100%, 71%);
+  --vegas-gold: hsl(0, 0%, 55%); /* used for years and similar information*/
+  --light-gray: hsl(0, 0%, 39%); /* used for secondary text */
+  --light-gray-70: hsla(21, 100%, 71%, 0.7); /* used for many things (mainly hovering on text)*/
+  --bittersweet-shimmer: hsl(0, 0%, 69%); /* used when selecting text fields in contact form */
+
+  --shadow-1: -4px 8px 24px hsla(49, 100%, 68%, 0.40); /* used for main project shadow */
+  --shadow-2: 0 16px 30px hsla(49, 100%, 74%, 0.35);
+  --shadow-3: -4px 16px 40px hsla(45, 100%, 50%, 0.30); /* used for "send message" button */
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15); /* used for project cards */
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.15); /* used for main big elements */
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease-in-out;
+
 }
 
 
@@ -472,7 +531,7 @@ main {
 .night-mode-ball {
   width: 20px;
   height: 20px;
-  background-color: #fff;
+  background-color: var(--orange-yellow-crayola);
   position: absolute;
   border-radius: 50%;
   top: 2px;
@@ -522,7 +581,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: var(--bg-gradient-onyx);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
