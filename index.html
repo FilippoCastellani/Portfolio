@@ -26,7 +26,6 @@
 </head>
 
 <body>
-
   <!--
     - #MAIN
   -->
@@ -155,30 +154,16 @@
 
         <div class="separator"></div>
 
-        <ul class="social-list">
 
-<!--
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
--->
-        </ul>
-
-      </div>
+        <div align="center">
+          <div class="icon-box-toggle">
+            <input type="checkbox" id="night-mode-checkbox" class="night-mode-checkbox" />
+            <label for="night-mode-checkbox" class="night-mode-label">
+              <ion-icon name="moon-outline"></ion-icon>
+              <ion-icon name="sunny-outline"></ion-icon>
+              <div class="night-mode-ball"></div>
+            </label>
+        </div>
 
     </aside>
 
@@ -235,6 +220,14 @@
         </header>
 
         <section class="about-text">
+
+          <p>
+            <center>
+            <strong> "... accepimus peritura perituri" </strong> <br> 
+              <small>(SENECA; de Providentia; V, 6-8)</small>
+            </center>
+          </p>
+
           <p>
             PhD Candidate in Biorobotics, I am driven by a profound interest in Neuroscience, Brain-Machine Interfaces (BMI), and AI-driven solutions for rehabilitation.            
           </p>
@@ -416,7 +409,7 @@
                     <li class="service-item">
         
                       <div class="service-icon-box">
-                        <img src="./assets/images/Icons/neuron.png" alt="Neuron" width="40">
+                        <img src="./assets/images/Icons/neuron.png" alt="Neuron" width="40", name="Neuron">
                       </div>
         
                       <div class="service-content-box">
@@ -432,7 +425,7 @@
                     <li class="service-item">
         
                       <div class="service-icon-box">
-                        <img src="./assets/images/Icons/cpu.png" alt="Central processing unit" width="40">
+                        <img src="./assets/images/Icons/cpu.png" alt="Central processing unit" width="40", name="CPU">
                       </div>
         
                       <div class="service-content-box">
@@ -448,7 +441,7 @@
                     <li class="service-item">
         
                       <div class="service-icon-box">
-                        <img src="./assets/images/Icons/bci.png" alt="BCI" width="40">
+                        <img src="./assets/images/Icons/bci.png" alt="BCI" width="40" name="BCI">
                       </div>
         
                       <div class="service-content-box">
@@ -464,7 +457,7 @@
                     <li class="service-item">
         
                       <div class="service-icon-box">
-                        <img src="./assets/images/Icons/coding.png" alt="Coding" width="40">
+                        <img src="./assets/images/Icons/coding.png" alt="Coding" width="40", name="Coding">
                       </div>
         
                       <div class="service-content-box">
