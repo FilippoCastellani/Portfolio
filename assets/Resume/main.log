@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.23)  29 OCT 2024 17:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.23)  17 MAR 2025 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1088,17 +1088,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--201
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 
  []
 
@@ -1129,9 +1129,9 @@ FontAwesome.pfb><C:/Users/caste/AppData/Local/Programs/MiKTeX/fonts/type1/impal
 lari/raleway/Raleway-Bold.pfb><C:/Users/caste/AppData/Local/Programs/MiKTeX/fon
 ts/type1/impallari/raleway/Raleway-BoldItalic.pfb><C:/Users/caste/AppData/Local
 /Programs/MiKTeX/fonts/type1/impallari/raleway/Raleway-Regular.pfb>
-Output written on main.pdf (1 page, 98713 bytes).
+Output written on main.pdf (1 page, 100155 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 55 PDF objects out of 1000 (max. 8388607)
  6 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
