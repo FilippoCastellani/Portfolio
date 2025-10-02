@@ -891,13 +891,20 @@ main {
 
 .clients-item {
   max-width: 100%;
+  min-width: 50%;
   scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clients-item img {
   filter: grayscale(1);
   transition: var(--transition-1);
   width: 100%;
+  
+  height: auto;
+  object-fit: contain;
 }
 
 .clients-item img:hover { filter: grayscale(0); }
