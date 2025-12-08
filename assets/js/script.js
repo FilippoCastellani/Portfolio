@@ -158,21 +158,33 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-const [activeSection, setActiveSection] = useState("home");
-
 // deep linking functionality
-useEffect(() => {
-  // check if there is a hash in the URL (e.g., https://filippocastellani.github.io/Portfolio/#projects)
-  const hash = window.location.hash.substring(1); // Remove the '#' character
-  if (hash === "projects") {
-    const projectsSection = document.querySelector("[data-page='projects']");
-    if (projectsSection) {
-      projectsSection.classList.add("active");
+window.addEventListener("load", function () {
+  const hash = window.location.hash.substring(1);
+  if (hash) {
+    let targetPage = null;
+    let targetNavLink = null;
+
+    for (let i = 0; i < pages.length; i++) {
+      if (pages[i].dataset.page === hash) {
+        targetPage = pages[i];
+        targetNavLink = navigationLinks[i];
+        break;
+      }
+    }
+
+    if (targetPage && targetNavLink) {
+      // Deactivate all pages and navigation links first
+      pages.forEach(page => page.classList.remove("active"));
+      navigationLinks.forEach(link => link.classList.remove("active"));
+
+      // Activate the target page and navigation link
+      targetPage.classList.add("active");
+      targetNavLink.classList.add("active");
       window.scrollTo(0, 0);
     }
   }
-}, []);
-
+});
 
 // switch to dark/light mode
 const night_mode_checkbox = document.getElementById("night-mode-checkbox");
