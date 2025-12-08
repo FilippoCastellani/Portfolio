@@ -140,25 +140,6 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// deep linking functionality
-useEffect(() => {
-  // check if there is a hash in the URL (e.g., #projects)
-  const hash = window.location.hash.replace('#', '').toLowerCase();
-
-  // if the hash matches any page, activate that page
-  if (hash === 'projects') {
-    for (let i = 0; i < pages.length; i++) {
-      if (pages[i].dataset.page === 'projects') {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
-    }
-  }
-}, []);
-
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
@@ -176,6 +157,22 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+const [activeSection, setActiveSection] = useState("home");
+
+// deep linking functionality
+useEffect(() => {
+  // check if there is a hash in the URL (e.g., https://filippocastellani.github.io/Portfolio/#projects)
+  const hash = window.location.hash.substring(1); // Remove the '#' character
+  if (hash === "projects") {
+    const projectsSection = document.querySelector("[data-page='projects']");
+    if (projectsSection) {
+      projectsSection.classList.add("active");
+      window.scrollTo(0, 0);
+    }
+  }
+}, []);
+
 
 // switch to dark/light mode
 const night_mode_checkbox = document.getElementById("night-mode-checkbox");
