@@ -83,6 +83,11 @@
 	\vcenteredhbox{\textcolor{black}{#3}}% Text
 }
 
+\usepackage{fancybox}
+
+\newcommand{\ovaliconbox}[3]{% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text 
+    \textcolor{blue}{\Ovalbox{\textcolor{black}{\Large\csname fa#1\endcsname \hspace{0.1cm}{#3}}}}}
+
 %----------------------------------------------------------------------------------------
 %	GRAPHICS DEFINITIONS
 %---------------------------------------------------------------------------------------- 
